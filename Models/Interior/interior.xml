@@ -33,6 +33,17 @@
     <object-name>intvitreporteD</object-name>
   </animation>
 
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporteG</object-name>
+    <object-name>intvitreporteD</object-name>
+  </effect>
+
   <!-- Pilote -->
   <model>
     <path>Aircraft/Junkers-F13/Models/Pilot/pilot.xml</path>
@@ -61,9 +72,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>IntLaPorteGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
     <type>rotate</type>
     <object-name>IntLaPorteGauche</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> -175 </factor>
     <axis>
       <x1-m> -1.410 </x1-m>
@@ -82,9 +107,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>IntLaPorteDroite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
     <type>rotate</type>
     <object-name>IntLaPorteDroite</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <property>sim/model/door-positions/passenger/position-norm</property>
     <factor> 175 </factor>
     <axis>
       <x1-m> -1.410 </x1-m>

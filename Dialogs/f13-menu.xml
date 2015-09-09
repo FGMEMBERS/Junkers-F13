@@ -13,7 +13,14 @@
           <script>aircraft.livery.dialog.toggle()</script>
         </binding>
       </item>
-<!--
+      <item>
+        <label>Show/hide Yokes</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>/sim/model/hide-yoke</property>
+        </binding>
+      </item>
+      <!--
       <item>
         <label>Immatriculation</label>
         <binding>
@@ -26,4 +33,3 @@
   </default>
 
 </PropertyList>
-

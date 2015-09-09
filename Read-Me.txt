@@ -24,13 +24,15 @@ Some useful keys:
 Thanks
 ======
 
+Karl Reisman : Interior texture, instruments and organistion of panel (made to Second Life)
+
 ===============
 BARANGER Emmanuel
-February, 18, 2012
+September, 09, 2015
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
-
 
 [Français]
 ----------
@@ -53,17 +55,18 @@ Vitesse estimée de croisière  :
 Autonomie estimée             :
 Equipage                      :
 
-
 Quelques touches utiles :
 =========================
 
 Remerciements
 =============
 
+Karl Reisman : Texture intérieure, instruments et organistion du tableau de bord (réalisé pour Second Life)
+
 ===============
 BARANGER Emmanuel
-18 Février 2012.
+09 September 2015
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
-

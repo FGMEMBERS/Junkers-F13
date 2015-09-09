@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- Junkers F13          : BARANGER Emmanuel with Melchior script (2012)
+                  updated : BARANGER Emmanuel August 2015
 
      Sources              : http://en.wikipedia.org/wiki/Junkers_F.13
 
@@ -12,8 +13,7 @@
      Maximum speed        : 173 km/h ( 93.40 kt )
      Cruise speed         : 160 km/h ( 86.40 kt )
 -->
-
-<airplane mass="2099" >
+<airplane mass="2099" version="YASIM_VERSION_CURRENT">
 
   <approach speed="30" aoa="6" fuel="0.2">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
@@ -52,12 +52,12 @@
   </wing>
 
   <hstab x="-3.881" y="0" z="0.092"
-	 chord="1.525"
-	 length="1.633"
+   chord="1.525"
+   length="1.633"
          taper="0.8"
          sweep="-5">
          <stall aoa="16" width="1" peak="1.5"/>
-         <flap0 start="0.0" end="1" lift="1.55" drag="1.2"/>
+         <flap0 start="0.0" end="1" lift="1.3" drag="1.1"/>
 
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
@@ -66,14 +66,16 @@
   </hstab>
 
   <vstab x="-4.075" y="0" z="-0.440"
-	 chord="1.440"
-	 length="1.397"
+   chord="1.440"
+   length="1.397"
          taper="0.60"
          sweep="10">
          <stall aoa="14" width="1" peak="1.5"/>
-         <flap0 start="0" end="1" lift="1.6" drag="1.2"/>
+         <flap0 start="0" end="1" lift="1.2" drag="1.1"/>
+         
          <control-input axis="/controls/flight/rudder" square="true" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+         
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
   </vstab>
 
@@ -87,7 +89,7 @@
   <propeller x="3.844" y="0" z="0.004"
              radius="1.35"
              mass="700"
-             moment="4"
+             moment="12"
              cruise-power="174"
              cruise-speed="87"
              cruise-rpm="1400"
@@ -159,4 +161,3 @@
   <ballast x="-0.174" y="0.0" z="-1.728" mass="400" />
 
 </airplane>
-

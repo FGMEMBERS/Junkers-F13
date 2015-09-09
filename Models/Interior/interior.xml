@@ -24,26 +24,21 @@
     <object-name>intvitreporteD</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>intvitres</object-name>
-    <object-name>intvitreporteG</object-name>
-    <object-name>intvitreporteD</object-name>
-  </animation>
-
   <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
+    <inherits-from>Aircraft/Junkers-F13/Models/Effects/Glass/glass</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>intvitreporteG</object-name>
     <object-name>intvitreporteD</object-name>
   </effect>
-
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporteG</object-name>
+    <object-name>intvitreporteD</object-name>
+  </effect>
+  
   <!-- Pilote -->
   <model>
     <path>Aircraft/Junkers-F13/Models/Pilot/pilot.xml</path>
@@ -64,6 +59,16 @@
     </offsets>
   </model>
 
+  <!-- All seats -->
+  <model>
+    <path>Aircraft/Junkers-F13/Models/Interior/Seats/seats.xml</path>
+  </model>
+  
+  <!-- All yokes -->
+  <model>
+    <path>Aircraft/Junkers-F13/Models/Interior/Panel/Instruments/yokes/all-yokes.xml</path>
+  </model>
+  
   <!-- Animation des portes -->
   <animation>
     <name>IntLaPorteGauche</name>
@@ -136,4 +141,3 @@
   </animation>
 
 </PropertyList>
-

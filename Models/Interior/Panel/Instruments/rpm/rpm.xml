@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList> 
+
+  <path>rpm.ac</path>
+
+  <animation>
+    <object-name>base</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    
+    <object-name>vitre</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Junkers-F13/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>engines/engine/rpm</property>
+    <interpolation>
+      <entry><ind>    0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  200 </ind><dep>  14 </dep></entry>
+      <entry><ind>  400 </ind><dep>  60 </dep></entry>
+      <entry><ind>  600 </ind><dep> 105 </dep></entry>
+      <entry><ind>  800 </ind><dep> 152 </dep></entry>
+      <entry><ind> 1000 </ind><dep> 196 </dep></entry>
+      <entry><ind> 1200 </ind><dep> 240 </dep></entry>
+      <entry><ind> 1400 </ind><dep> 285 </dep></entry>
+      <entry><ind> 1700 </ind><dep> 345 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>

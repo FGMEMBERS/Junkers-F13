@@ -2,28 +2,22 @@
 
 <PropertyList>
 
-  <path>vsi.ac</path>
+  <path>fuel.ac</path>
 
   <animation>
-    <object-name>fond</object-name>
+    <object-name>base</object-name>
     <object-name>face</object-name>
     <object-name>needle</object-name>
 
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Junkers-F13/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>face</object-name>
@@ -39,18 +33,18 @@
   <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>/instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
-    <interpolation>
-      <entry><ind> -1970 </ind><dep>  180 </dep></entry>
-      <entry><ind>     0 </ind><dep>    0 </dep></entry>
-      <entry><ind>  1970 </ind><dep> -180 </dep></entry>
-    </interpolation>
+    <property>consumables/fuel/total-fuel-norm</property>
+    <factor> 84 </factor>
+    <center>
+      <x-m>  0.00000 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.01174 </z-m>
+    </center>
     <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
 </PropertyList>
-

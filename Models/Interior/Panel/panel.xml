@@ -3,53 +3,126 @@
 <PropertyList>
 
   <path>panel.ac</path>
-
+  
+  <!-- Panel organization instruments : Karl Reisman for Second Life -->
   <animation>
     <!-- Objets opaques -->
     <object-name>panel</object-name>
-
+    <object-name>tubulure</object-name>
+    <object-name>details</object-name>
+    <object-name>visses</object-name>
+    
     <!-- Objets transparents -->
   </animation>
 
-  <!-- ALT -->
+  <!-- STOFFAN -->
   <model>
-    <path>Aircraft/Junkers-F13/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <path>Aircraft/Junkers-F13/Models/Interior/Panel/Instruments/stoffan/stoffan.xml</path>
     <offsets>
-      <x-m> 0.005516 </x-m>
-      <y-m> 0.000000 </y-m>
-      <z-m> 0.059000 </z-m>
+      <x-m> -0.00237 </x-m>
+      <y-m> -0.21283 </y-m>
+      <z-m> -0.04199 </z-m>
     </offsets>
   </model>
-
-  <!-- TURN -->
+  
+  <!-- FUEL -->
   <model>
-    <path>Aircraft/Junkers-F13/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <path>Aircraft/Junkers-F13/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
     <offsets>
-      <x-m>  0.005516 </x-m>
-      <y-m> -0.220000 </y-m>
-      <z-m> -0.030000 </z-m>
+      <x-m> -0.00268 </x-m>
+      <y-m> -0.21283 </y-m>
+      <z-m>  0.02646 </z-m>
     </offsets>
   </model>
-
+  
   <!-- ASI -->
   <model>
     <path>Aircraft/Junkers-F13/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
-      <x-m>  0.005516 </x-m>
-      <y-m> -0.047000 </y-m>
-      <z-m> -0.040000 </z-m>
+      <x-m> -0.00334 </x-m>
+      <y-m> -0.12054 </y-m>
+      <z-m>  0.05962 </z-m>
     </offsets>
   </model>
-
-  <!-- VSI -->
+  
+  <!-- CLOCK -->
   <model>
-    <path>Aircraft/Junkers-F13/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <path>Aircraft/Junkers-F13/Models/Interior/Panel/Instruments/clock/clock.xml</path>
     <offsets>
-      <x-m>  0.005516 </x-m>
-      <y-m>  0.047000 </y-m>
-      <z-m> -0.040000 </z-m>
+      <x-m> -0.00240 </x-m>
+      <y-m>  0.21121 </y-m>
+      <z-m>  0.01636 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/Junkers-F13/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m> -0.00347 </x-m>
+      <y-m> -0.00051 </y-m>
+      <z-m>  0.07016 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ANLASS -->
+  <model>
+    <path>Aircraft/Junkers-F13/Models/Interior/Panel/Instruments/anlass/anlass.xml</path>
+    <offsets>
+      <x-m> -0.00755 </x-m>
+      <y-m> -0.05124 </y-m>
+      <z-m> -0.29061 </z-m>
     </offsets>
   </model>
 
+  <!-- MAGNET -->
+  <model>
+    <path>Aircraft/Junkers-F13/Models/Interior/Panel/Instruments/magnet/magnet.xml</path>
+    <offsets>
+      <x-m>  0.00248 </x-m>
+      <y-m>  0.06068 </y-m>
+      <z-m> -0.18907 </z-m>
+      <roll-deg> -11 </roll-deg>
+    </offsets>
+  </model>
+  
+  <!-- MANOMETER -->
+  <model>
+    <path>Aircraft/Junkers-F13/Models/Interior/Panel/Instruments/manometer/manometer.xml</path>
+    <offsets>
+      <x-m> -0.00429 </x-m>
+      <y-m> -0.00343 </y-m>
+      <z-m> -0.13822 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- LEVERS -->
+  <model>
+    <path>Aircraft/Junkers-F13/Models/Interior/Panel/Instruments/divers/knob0.xml</path>
+    <offsets>
+      <x-m> -0.00240 </x-m>
+      <y-m> -0.05913 </y-m>
+      <z-m> -0.13742 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Junkers-F13/Models/Interior/Panel/Instruments/divers/knob1.xml</path>
+    <offsets>
+      <x-m> -0.00843 </x-m>
+      <y-m> -0.05913 </y-m>
+      <z-m> -0.19100 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Junkers-F13/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.00174 </x-m>
+      <y-m>  0.12256 </y-m>
+      <z-m>  0.05888 </z-m>
+    </offsets>
+  </model>
+  
 </PropertyList>
-

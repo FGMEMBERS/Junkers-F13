@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>seats.ac</path>
+
+  <!-- Seats by Karl Reisman for Second Life -->
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>pilot</object-name>
+    <object-name>copilot</object-name>
+    <object-name>passengerleft</object-name>
+    <object-name>passengerright</object-name>
+    <object-name>passengerrear</object-name>
+    
+    <!-- Objets transparents -->
+  </animation>
+
+</PropertyList>
